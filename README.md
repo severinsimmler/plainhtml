@@ -3,7 +3,13 @@
 ## Installation
 
 ```
-$ pip install plainhtml
+$ uv add plainhtml
+```
+
+For development in this repository:
+
+```
+$ uv sync --dev
 ```
 
 ## Example
