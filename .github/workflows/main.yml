@@ -17,7 +17,7 @@ jobs:
         uses: astral-sh/setup-uv@cec208311dfd045dd5311c1add060b2062131d57
 
       - name: Build wheels
-        run: uv tool run cibuildwheel --output-dir dist
+        run: uv build
 
       - name: Publish wheels
-        run: uv publish --token ${{ secrets.POETRY_PYPI_TOKEN_PYPI }}
+        run: uv publish --token ${{ secrets.PYPI_TOKEN }}
